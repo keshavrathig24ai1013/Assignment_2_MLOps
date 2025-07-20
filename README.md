@@ -1,6 +1,18 @@
-Assignment_2_MLOps
-Analysis:
+:
 
-Perfect Accuracy (1.0000): o Observation: The model achieved 100% accuracy on the inference data. o Analysis: For this particular assignment, this high accuracy is expected. The sklearn.datasets.load_digits dataset is relatively small (1797 samples) and clean. More importantly, in this setup, the model is being evaluated on the same dataset it was trained on. Logistic Regression can easily achieve near-perfect or perfect scores on the training data itself for such a well-behaved and simple classification task. This confirms that the model was successfully loaded and is making correct predictions on the data it has already "seen."
-Matching True vs. Predicted Labels: o Observation: The "First 10 true labels" perfectly match the "First 10 predictions." o Analysis: This visually reinforces the 100% accuracy. It confirms that the model's output directly corresponds to the ground truth for these initial samples, indicating no misclassifications in this subset.
-Number of Predictions: o Observation: "Generated 1797 predictions." o Analysis: This matches the total number of samples in the sklearn.datasets.load_digits dataset. This confirms that the inference script processed the entire dataset as intended.
+🔍 Inference Analysis
+✅ Perfect Accuracy (1.0000)
+Observation: The model achieved 100% accuracy on the inference dataset.
+
+Explanation: This result is expected because the model was evaluated on the same dataset (sklearn.datasets.load_digits) it was trained on. The dataset is small (1797 well-structured samples), and Logistic Regression performs exceptionally well on such simple and clean classification tasks. This confirms that the model was correctly loaded and is making accurate predictions on familiar data.
+
+🎯 Matching True vs. Predicted Labels
+Observation: The first 10 predicted labels perfectly matched the first 10 actual labels.
+
+Explanation: This serves as a visual confirmation of the model’s correctness. The exact match highlights that the inference logic is functioning properly and that there are no misclassifications in this sample.
+
+📈 Total Predictions Made
+Observation: A total of 1797 predictions were generated.
+
+Explanation: This matches the exact number of records in the load_digits dataset. It verifies that the inference script processed the entire dataset as intended, with no records skipped or lost.
+
