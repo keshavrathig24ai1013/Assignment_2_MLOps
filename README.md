@@ -1,6 +1,4 @@
-:
-
-🔍 Inference Analysis
+##🔍 Inference Analysis
 ✅ Perfect Accuracy (1.0000)
 Observation: The model achieved 100% accuracy on the inference dataset.
 
